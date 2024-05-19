@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  /* height: 100%; */
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffee58;
+}
+
+.search-input {
+  background-color: white;
+}
+
+.search-input:focus {
+  border-top: none !important;
+}

@@ -1,0 +1,18 @@
+// create-vite-app
+npm create vite@latest <app-name>
+cd <app-name>
+npm install
+npm run dev
+
+// react-three-fibre
+npm install three @react-three/fiber @react-three/drei maath valtio react-color framer motion
+
+// tailwind css
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+// libraries used
+useSnapshot, proxy from voltio
+motion, AnimatePresence from framer-motion
+Canvas from @react-three/fiber
+Environment, Center from @react-three/drei

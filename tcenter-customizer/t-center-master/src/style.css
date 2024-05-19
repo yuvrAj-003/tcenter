@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+/* @import url("https://rsms.me/inter/inter.css"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+canvas{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #8477ff; /* Change this color to your desired thumb color */
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:active{
+  opacity: 0.8;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side,#ED303C 94%,#0000),
+    radial-gradient(farthest-side,#3B8183 94%,#0000),
+    radial-gradient(farthest-side,#FAD089 94%,#0000),
+    radial-gradient(farthest-side,#FF9C5B 94%,#0000),
+    #ED303C;
+  background-size: 105% 105%;
+  background-repeat: no-repeat;
+  animation: l5 2s infinite; 
+}
+@keyframes l5 {
+  0%  {background-position: 50% -50px,-40px 50%, 50% calc(100% + 50px),calc(100% + 50px) 50%}
+  20%,
+  25% {background-position: 50% -50px,-50px 50%, 50% calc(100% + 50px),50% 50%}
+  45%,
+  50% {background-position: 50% -50px,-50px 50%, 50% 50%              ,50% 50%}
+  75%,
+  75% {background-position: 50% -50px, 50%  50%, 50% 50%              ,50% 50%}
+  95%,
+  100%{background-position: 50%  50% , 50%  50%, 50% 50%              ,50% 50%}
+}

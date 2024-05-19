@@ -1,0 +1,50 @@
+(directories)
+
+/assets
+    images
+
+/components
+    card
+    card expand
+    color picker
+    custom button
+    error display
+    file picker
+    invert text
+    center text
+    loading display
+    range text
+    rotate text
+
+/canvas
+    shirt display
+
+/config
+    store
+    firestore
+    motion
+    read file
+
+/pages
+    home
+    customizer
+    marketplace
+    account page
+
+(routes)
+
+/auth
+    login
+    register
+
+/
+    home
+    customizer
+
+/marketplace
+    marketplace
+
+/account page  
+    change name
+    wishlist
+    signout
