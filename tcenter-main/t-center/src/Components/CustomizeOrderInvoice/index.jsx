@@ -39,6 +39,15 @@ function CustomizeOrderInvoice() {
         <div className="py-5 flex justify-between">
           {/* text  */}
           <h1 className=" text-xl text-black font-bold">Customized Order</h1>
+          <button
+            onClick={() => {
+              localStorage.removeItem("customize");
+              navigate("/");
+              setTimeout(() => navigate("/user"), 500);
+            }}
+          >
+            <Trash />
+          </button>
         </div>
 
         {/* table  */}

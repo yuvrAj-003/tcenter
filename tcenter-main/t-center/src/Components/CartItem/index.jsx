@@ -51,6 +51,7 @@ function CartItem(product) {
                     setTimeout(() => navigate("/cart"), 100);
                   }}
                 >
+                  {/* remove cart item  */}
                   <Trash size={12} className="text-red-500" />
                   <span className="text-xs font-medium text-red-500">
                     Remove
